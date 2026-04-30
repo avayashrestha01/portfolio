@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-style: none;
+    list-style: none;
+    transition: 0.3s ease-in-out all;
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+body {
+    color: #f9f9f9;
+    background-color: #000000e7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    z-index: 10000;
+}
+
+header nav {
+    background-color: #0a0a0ae8;
+    width: min(80%, 1000px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+    padding: 0px 24px;
+    border-radius: 32px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 20px;
+    padding: 8px 24px;
+    border-radius: 24px;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+    background-color: #f9f9f94f;
+    transform: translateY(-5px);
+}
+
+aside {
+    width: 25%;
+    background-color: #0a0a0a;
+    padding: 32px;
+    border-radius: 24px;
+    position: sticky;
+    top: 100px;
+    margin: 20px;
+}
+
+aside img {
+    width: 240px;
+    border-radius: 50%;
+    display: block;
+    align-self: center;
+    justify-self: center;
+}
+
+aside h3 {
+    font-size: 28px;
+    align-self: center;
+    justify-self: center;
+}
+
+aside h6{
+    color: gray;
+    font-size: 16px;
+    justify-self: center;
+}
+
+aside ul {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+aside ul li {
+    margin: 20px;
+    scale: 2;
+}
+
+aside ul li:hover {
+    scale: 2.2;
+}
+
+.bio {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px;
+}
+
+gmail {
+    color: aqua;
+}
+
+.skill {
+    color: yellowgreen;
+}
+
+.completed {
+    color: lime;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main {
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    cursor: default;
+}
+
+main #skill,
+#about,
+#contact {
+    display: block;
+    margin: 120px;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+main #skill h2,
+#about h2,
+#contact h2 {
+    color: rgba(4, 82, 228, 0.859);
+    font-size: 40px;
+    margin: 20px;
+}
+
+#about ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details {
+    padding: 24px 48px;
+    background-color: #0a0a0a;
+    margin: 10px;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #0a0a0a;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.skill-card:hover,
+.details:hover {
+    transform: translateY(-5px);
+    background: #1a1a1a;
+}
+
+.details label {
+    color: rgba(235, 235, 235, 0.891);
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.learningjs {
+    color: limegreen;
+}
+
+.skill-bar {
+    width: 75%;
+}
+
+.bar {
+    background: #333;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar span {
+    display: block;
+    height: 10px;
+    background: limegreen;
+}
+
+main #skill,
+main #about,
+main #contact {
+    margin: 60px 20px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    aside,
+    main {
+        width: 75%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    aside {
+        position: unset;
+        display: grid;
+    }
+
+    main #skill,
+    main #about,
+    main #contact {
+        margin: 40px 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
