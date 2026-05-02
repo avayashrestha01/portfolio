@@ -60,6 +60,7 @@ header nav ul li:hover {
     transform: scale(1.1);
     background-color: #f9f9f94f;
     transform: translateY(-5px);
+    box-shadow: whitesmoke 3px 3px 10px ;
 }
 
 aside {
@@ -101,6 +102,10 @@ aside ul {
 aside ul li {
     margin: 20px;
     scale: 2;
+}
+
+aside ul li i:hover{
+    transform: translatey(-4px);
 }
 
 aside ul li:hover {
@@ -151,6 +156,8 @@ main #skill,
     justify-content: center;
     justify-items: center;
     align-items: center;
+    width: 100%;
+    border-top: gray solid 2px;
 }
 
 main #skill h2,
@@ -194,6 +201,7 @@ main #skill h2,
 .details:hover {
     transform: translateY(-5px);
     background: #1a1a1a;
+    box-shadow: whitesmoke 3px 4px 16px ;
 }
 
 .details label {
@@ -260,6 +268,10 @@ main #contact {
     main #about,
     main #contact {
         margin: 40px 16px;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
     }
 
     .skills-grid {
