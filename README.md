@@ -9,4 +9,4 @@ Welcome to my personal portfolio website. This is a lightweight, static site bui
 - **HTML5** - Semantic structure
 - **CSS3** - Styling and layout
 
-Access the website at: https://avayashresthadev.netlify.app
+Access the website at: [Avaya Shrestha | Portfolio](https://avayashresthadev.netlify.app)
