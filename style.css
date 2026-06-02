@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar{
-    visibility: hidden;
+    display: none;
 }
 
 body {
@@ -281,3 +281,32 @@ main #contact {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 }
+
+.inputCont{
+    padding: 24px 0;
+    min-width: 80%;
+    border-radius: 24px;
+    background-color: #0a0a0a;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.inputCont:hover{
+    /* scale: 1.1; */
+    box-shadow: 0px 10px 15px rgb(160, 160, 160);
+    transform: translateY(-10px);
+    background-color: #1a1a1a;
+}
+
+.inputCont .inp{
+    margin: 32px 8px;
+    padding: 8px;
+}
+
+.inputCont .inp a{
+    padding: 8px 8px;
+    color: aqua;
+}
+
