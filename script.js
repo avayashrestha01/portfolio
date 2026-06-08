@@ -1,9 +1,11 @@
-const DOB = new Date("2010-11-12");
-const currentDate = new Date();
+const dateOfBirth = new Date("2010-11-12");
+const today = new Date();
 
-const age = currentDate.getFullYear - DOB.getFullYear;
-const monthDiffer = currentDate.getMonth - DOB.getMonth; // 06-02 06-12
+let currentAge = today.getFullYear - dateOfBirth.getFullYear;
+const monthDiffer = today.getMonth - dateOfBirth.getMonth; // 06-02 06-12
 
-if (monthDiffer < 0 || (monthDiffer === 0 && currentDate.getDate < DOB.getDate)){
-    age--;
+if (monthDiffer < 0 || (monthDiffer === 0 && today.getDate < dateOfBirth.getDate)){
+    currentAge
 }
+
+document.body.innerText = currentAge;
