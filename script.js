@@ -10,4 +10,4 @@ if (monthDiffer < 0 || (monthDiffer === 0 && currentDate.getDate() < birthDate.g
     age--;
 }
 
-document.body.innerText = age;
+document.getElementById('age').innerText = age;
